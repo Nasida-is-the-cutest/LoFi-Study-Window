@@ -1,0 +1,147 @@
+{
+  "VerifiedUtc": "2026-10-11T05:43:39.2626801Z",
+  "BaselineCommit": "08dc19e5e8e42df9647baaab055179977f0c6363",
+  "Version": "1.9.4 local",
+  "GameVersion": "1.17.3",
+  "Unity": "2022.3.62f2",
+  "BepInEx": "5.4.23.5",
+  "FinalDllSha256": "2AD73C31CE3227F49F194C0A2DB7FD6934E4295A7499C4EE4E33E38BB319BB24",
+  "AccuracyDllSha256": "CB033703B0F63CA172765AFF1BC6779E47EFC3F9A2645E8E8DDF688824E24AB9",
+  "ClockMethodsIdentical": 26,
+  "Build": {
+    "Warnings": 0,
+    "Errors": 0
+  },
+  "Tests": {
+    "Passed": 165,
+    "Skipped": 0,
+    "Failed": 0
+  },
+  "NativeWindowChecks": 86,
+  "SyntheticPowerChecks": 15,
+  "Timer": {
+    "WorkTargetSeconds": 1500,
+    "ThresholdSeconds": 1,
+    "Passed": true,
+    "WorkActualSeconds": 1500.175,
+    "RestActualSeconds": 300.109,
+    "RestTargetSeconds": 300,
+    "TotalErrorSeconds": 0.284,
+    "Reference": "Independent Stopwatch; actual game PomodoroTimerService isolated from business services",
+    "FinalDllSmokeSeconds": [
+      2.096,
+      2.098
+    ]
+  },
+  "Unload": {
+    "Controllers": 0,
+    "RestoreRunners": 0,
+    "OwnPatchOwnersRemaining": 0,
+    "WindowRestored": "1280x720 windowed; original bounds; non-topmost",
+    "LearningCanvases": 0,
+    "Passed": true,
+    "Snapshots": 0,
+    "OtherModRegistrations": [
+      "Validation Other"
+    ],
+    "MirrorRenderTextures": 0
+  },
+  "PowerMeasurement": {
+    "TargetReductionPercent": 20,
+    "Status": "Deferred by user",
+    "MeasuredReductionPercent": null
+  },
+  "Remaining": [
+    "Physical multi-monitor DPI transitions",
+    "Sleep/wake",
+    "Real third-party mod compatibility",
+    "Complete native export picker interaction",
+    "Full real timer completion audio and statistics"
+  ],
+  "Evidence": [
+    "runtime-validation/timer-25plus5.csv",
+    "runtime-validation/clock-il-equivalence.json",
+    "runtime-validation/room-input.txt",
+    "runtime-validation/unload-observe.txt",
+    "runtime-validation/final-patch-before.txt",
+    "runtime-validation/final-patch-after.txt",
+    "runtime-validation/final-unloaded.txt",
+    "iGPU Savior.Tests/TestResults/learning-final.trx",
+    "runtime-validation/release-unloaded.txt",
+    "runtime-validation/release-patch-after.txt",
+    "runtime-validation/hidden-fixed-restored.txt",
+    "runtime-validation/hidden-fixed-unloaded.txt"
+  ],
+  "HiddenStartupRestoration": "Passed after fix: restored visible; 1280x720; original bounds; quality; unload resources zero; other mod retained",
+  "UiRefresh": {
+    "VerifiedUtc": "2026-10-11T15:52:22.2094315Z",
+    "DllSha256": "196BF503F3F3888C5554FAAB327CDD5FAFF8E563AB6FE519B7D2C79299D45ADF",
+    "Build": {
+      "Warnings": 0,
+      "Errors": 0
+    },
+    "Tests": {
+      "Passed": 165,
+      "Failed": 0,
+      "Skipped": 0,
+      "Evidence": "iGPU Savior.Tests/TestResults/ui-refresh.trx",
+      "Warnings": "Existing CA1416 Windows API analyzer warnings in test project"
+    },
+    "NormalButtonColor": {
+      "R": 0.08,
+      "G": 0.13,
+      "B": 0.18,
+      "Alpha": 0.42,
+      "TransparencyPercent": 58
+    },
+    "AllButtonsSamePalette": true,
+    "SelectedButtonUsesNormalColor": true,
+    "TopInstructionRemoved": true,
+    "NativeTopDragAreaDip": 30,
+    "Layouts": [
+      "720x405",
+      "480x270",
+      "320x180",
+      "480x900"
+    ],
+    "VisualAndRaycastChecks": "Passed in actual Unity UI; no overlap or clipping; every button center hit its own button",
+    "Fixture": "Boot blocked before login/cloud/save; actual production BuildUi; neutral test background and Windows font; fixed 49:31; simulated callbacks only",
+    "BusinessCallbacksRetested": false,
+    "UserRunningGameModified": false,
+    "NativeWindowTestsRerun": false,
+    "LongTimerTestRerun": false,
+    "PowerMeasurement": "Deferred by user",
+    "Evidence": [
+      "runtime-validation/ui-refresh-720x405.png",
+      "runtime-validation/ui-refresh-480x270.png",
+      "runtime-validation/ui-refresh-320x180.png",
+      "runtime-validation/ui-refresh-480x900.png",
+      "runtime-validation/ui-preview-raycast.txt",
+      "runtime-validation/ui-preview-actions.txt"
+    ]
+  },
+  "PublicRelease": {
+    "ReleaseId": "learning-window-2026-10-21",
+    "DllSha256": "473B9D57B512F3D8E6742247FC56A212DE724F83E8B71900D1D8F9A1BA07D16D",
+    "Removed": "Debug symbols and embedded build paths",
+    "RuntimeEquivalentToUiRefresh": true,
+    "AssemblyComparison": {
+      "Types": 197,
+      "Methods": 958,
+      "ExceptionHandlers": 139,
+      "SnapshotRecords": 3883,
+      "Differences": 0
+    },
+    "Build": {
+      "Warnings": 0,
+      "Errors": 0
+    },
+    "Tests": {
+      "Passed": 165,
+      "Failed": 0,
+      "Skipped": 0
+    },
+    "InstallerChecks": 29,
+    "PowerMeasurement": "Not measured"
+  }
+}

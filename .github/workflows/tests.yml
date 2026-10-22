@@ -1,0 +1,29 @@
+name: Source and installer checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Pure logic regression tests
+        run: dotnet test "iGPU Savior.Tests/iGPU Savior.Tests.csproj" -c Release
+      - name: Version consistency
+        shell: pwsh
+        run: ./scripts/sync-version.ps1 -CheckOnly
+      - name: Installer round trip in a fake game directory
+        shell: powershell
+        run: ./scripts/Test-Installer.ps1
+
+# The production DLL needs locally owned game assemblies. They are never
+# uploaded to this repository or to Actions; see scripts/package-release.ps1.

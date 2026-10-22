@@ -1,0 +1,14 @@
+{
+    "name": "LoFi_Study_Window",
+    "version_number": "1.9.4",
+    "website_url": "https://github.com/Nasida-is-the-cutest/LoFi-Study-Window",
+    "description": "置顶番茄钟与省电学习小窗；基于并参考 Small-tailqwq 的开源项目 iGPU Savior（MIT）改进。",
+    "dependencies": [
+        "BepInEx-BepInExPack-5.4.2304"
+    ],
+    "authors": [
+        "Small-tailqwq",
+        "Nasida-is-the-cutest"
+    ],
+    "license": "MIT"
+}

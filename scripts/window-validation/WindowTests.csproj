@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework><OutputType>Exe</OutputType><EnableDefaultCompileItems>false</EnableDefaultCompileItems></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="../../iGPU Savior/Utilities/WindowManager.cs" Link="WindowManager.cs" />
+    <Compile Include="../../iGPU Savior/Core/Constants.cs" Link="Constants.cs" />
+  </ItemGroup>
+</Project>
+
