@@ -1,5 +1,6 @@
 # Lo-Fi 学习小窗
 
+(观前提醒：本项目全程使用chatgpt 6.1 sol完成)
 给《放松时光：与你共享 Lo-Fi 故事》（Chill with You: Lo-Fi Story）加一个常驻置顶的番茄钟小窗，让音乐和计时陪你学习，并通过静态背景减少持续绘制房间的开销。
 
 **本项目基于并借鉴开源项目 [iGPU Savior](https://github.com/Small-tailqwq/iGPUSaviorMod)，原作者为 [Small-tailqwq](https://github.com/Small-tailqwq)。这是独立维护的衍生改进版，保留原项目的 MIT 许可证及版权声明，详见 [致谢与来源](CREDITS.md)。**
